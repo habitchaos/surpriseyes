@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages from Pigar Clan</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #000000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .container {
+      background: rgba(40, 40, 40, 0.9);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+      max-width: 800px;
+      width: 90%;
+      animation: fadeIn 1.5s ease-out;
+      margin-bottom: 30px;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @keyframes sparkle {
+      0% { opacity: 0.5; }
+      50% { opacity: 1; }
+      100% { opacity: 0.5; }
+    }
+    
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 2px 2px 8px rgba(255, 117, 140, 0.3);
+      animation: sparkle 2s infinite;
+    }
+    
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #e0e0e0;
+      max-width: 600px;
+      margin: 0 auto 15px auto;
+    }
+    
+    .button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .button:hover {
+      background: linear-gradient(to right, #ff6b81, #ff6ea7);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .emoji {
+      font-size: 2em;
+      margin: 0 5px;
+      display: inline-block;
+      animation: float 3s infinite ease-in-out;
+    }
+
+    .pigar { animation-delay: 0s; }
+    .friends { animation-delay: 0.5s; }
+    .heart { animation-delay: 1s; }
+    .star { animation-delay: 1.5s; }
+
+    .message-container {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .message {
+      text-align: left;
+      background: rgba(60, 60, 60, 0.8);
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      border-left: 4px solid #ff758c;
+      transition: transform 0.3s ease;
+    }
+
+    .message:hover {
+      transform: translateY(-5px);
+    }
+
+    .signature {
+      font-style: italic;
+      text-align: right;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #ff758c;
+    }
+    
+    .stars {
+      position: fixed;
+      width: 2px;
+      height: 2px;
+      background-color: white;
+      opacity: 0.7;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      box-shadow: 0 0 3px #fff;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Message ng Pigar Clan</h1>
+    
+    <div class="message-container">
+      <div class="message">
+        <p>Mayumi, happy birthday! Grabe, parang kailan lang nagkakilala tayo at ngayon isa ka na sa mga pinakaimportanteng tao sa buhay namin. Ang bilis ng panahon!</p>
+        <p>Salamat sa pagpapasaya sa amin lagi at sa pagbibigay ng good vibes. Ikaw talaga ang sunshine ng Pigar Clan!</p>
+        <p class="signature">- Vincent (Originator of Pigar-Pigar knowledge)</p>
+      </div>
+
+      <div class="message">
+        <p>Happy birthday, Mayumi! Sana laging masarap ulam mo at hindi ka masyadong pagod sa work. Good vibes lang tayong lahat, okay? Enjoy your day!</p>
+        <p>P.S. Excited na ako sa Baguio gala natin! Tuloy na tuloy 'yan for sure!</p>
+        <p class="signature">- Anna</p>
+      </div>
+
+      <div class="message">
+        <p>Hey Mayumi! Happy birthday sa'yo! Mabuhay ka hanggang 100 years at sana ma-achieve mo lahat ng dreams mo. Proud sa'yo ang buong Pigar Clan!</p>
+        <p>Stay awesome and funny. Wag kalimutan ang food adventures natin ha!</p>
+        <p class="signature">- Miguel</p>
+      </div>
+
+      <div class="message">
+        <p>Maligayang bati sa iyong kaarawan, Mayumi! Sana ay napasaya ka ng surprise na ito. Deserve mo lahat ng happiness sa mundo.</p>
+        <p>Japan man o Pilipinas, kaibigan mo pa rin kami forever! Stay connected kahit malayo tayo sa isa't isa, ok?</p>
+        <p class="signature">- Pigar Clan</p>
+      </div>
+    </div>
+    
+    <a href="main.html" class="button">Back to Birthday Message</a>
+  </div>
+
+  <script>
+    // Create starry background
+    function createStars() {
+      const starCount = 200;
+      
+      for (let i = 0; i < starCount; i++) {
+        let star = document.createElement('div');
+        star.classList.add('stars');
+        star.style.left = Math.random() * 100 + 'vw';
+        star.style.top = Math.random() * 100 + 'vh';
+        star.style.opacity = Math.random();
+        star.style.width = (Math.random() * 2) + 1 + 'px';
+        star.style.height = star.style.width;
+        
+        document.body.appendChild(star);
+        
+        // Make some stars twinkle
+        if (Math.random() > 0.7) {
+          let animationDuration = Math.random() * 3 + 1;
+          
+          star.animate([
+            { opacity: star.style.opacity },
+            { opacity: 0.1 },
+            { opacity: star.style.opacity }
+          ], {
+            duration: animationDuration * 1000,
+            easing: 'ease-in-out',
+            iterations: Infinity
+          });
+        }
+      }
+    }
+    
+    // Run the stars effect
+    window.onload = function() {
+      createStars();
+    }
+  </script>
+</body>
+</html>
